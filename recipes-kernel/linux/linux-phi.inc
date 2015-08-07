@@ -15,6 +15,7 @@ require recipes-kernel/linux/linux-dtb.inc
 # Avoid imx-test installation hacks
 IMX_TEST_SUPPORT = "n"
 
-SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git \
-           file://defconfig"
+SRC_URI = "git://github.com/Freescale/linux-mainline.git;branch=${SRCBRANCH} \
+	   file://defconfig"
+	   
 LOCALVERSION = "-phi"
